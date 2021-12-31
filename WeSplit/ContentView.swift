@@ -9,9 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!!")
-            .padding()
+        NavigationView{
+        Form{
+            Section{
+        Text("Hello, world!")
+        Text("Meow")
+            }
+            Section{
+        Text("Purr")
+        Text("Hiss")
+            }
+        }
+        .navigationTitle("Toby's Cat App")
+        .navigationBarTitleDisplayMode(.inline)
     }
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
